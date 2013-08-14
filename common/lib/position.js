@@ -55,8 +55,6 @@
   
   var DUMMY_POS = new Position(null, -1, -1, -1, -1);
   
-  return {
-    Position: Position,
-    DUMMY_POS: DUMMY_POS
-  };
+  exports.Position = Position;
+  exports.DUMMY_POS = DUMMY_POS;
 //});
