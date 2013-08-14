@@ -18,7 +18,7 @@
 	"escodegen": "*",
 	"nodeunit" : "*"
     },
-    "license": "Eclipse"
+    "license": "Eclipse",
     "repository": {
         "type": "git",
         "url": "https://github.com/nwinter/JS_WALA"
