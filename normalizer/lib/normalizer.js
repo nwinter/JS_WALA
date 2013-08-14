@@ -13,11 +13,11 @@
  * The normalizer itself. The main entry point is function 'normalize', which takes
  * an AST to normalize and an object with options.
  */
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   var ast = require('../../common/lib/ast'),
       cflow = require('./cflow'),
       decls = require('./decls'),
@@ -1037,4 +1037,4 @@ define(function(require, exports) {
   }
     
   exports.normalize = normalize;
-});
+//});

@@ -12,11 +12,11 @@
 /**
  * Convenience functions for constructing and navigating ASTs.
  */
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   var position = require('./position');
   
   // constructor signatures; arguments in angle brackets are terminal children, the others subtrees
@@ -177,4 +177,4 @@ define(function(require, exports) {
   
   for(var p in signatures)
     defconstructor(p, signatures[p]);
-});
+//});

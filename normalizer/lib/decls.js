@@ -12,11 +12,11 @@
 /**
  * Utility functions to collect all variable and function declarations in a subtree.
  */
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   var ast = require('../../common/lib/ast');
 
   function getDeclName(decl) {
@@ -43,4 +43,4 @@ define(function(require, exports) {
   
   exports.collectDecls = collectDecls;
   exports.getDeclName = getDeclName;
-});
+//});

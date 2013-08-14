@@ -13,11 +13,11 @@
  * Helper function for determining whether a piece of code may terminate normally, or whether
  * it always returns/breaks/throws an exception.
  */
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   var mayCompleteNormally = exports.mayCompleteNormally = function(nd) {
     switch(nd.type) {
     case 'ReturnStatement':
@@ -38,4 +38,4 @@ define(function(require, exports) {
       return true;
     }
   };
-});
+//});

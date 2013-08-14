@@ -13,11 +13,11 @@
  * Dominator tree construction.
  */
 
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   var ast = require('../../common/lib/ast'),
       sets = require('../../common/lib/sets');
 
@@ -192,4 +192,4 @@ define(function(require, exports) {
   }
 
   exports.buildDominatorTrees = buildDominatorTrees;
-});
+//});

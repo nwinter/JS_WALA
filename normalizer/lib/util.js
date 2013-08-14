@@ -12,11 +12,11 @@
 /**
  * Utility methods. 
  */
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   Array.prototype.flatmap = function(fn, thisArg) {
     var res = [];
     for(var i=0;i<this.length;++i) {
@@ -26,4 +26,4 @@ define(function(require, exports) {
     }
     return res;
   };
-});
+//});

@@ -15,11 +15,11 @@
  * a 'with' scope.
  */
 
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   var decls = require('./decls');
   
   // abstract base class of all scopes
@@ -124,4 +124,4 @@ define(function(require, exports) {
   exports.FunctionScope = FunctionScope;
   exports.CatchScope = CatchScope;
   exports.WithScope = WithScope;
-});
+//});

@@ -17,11 +17,11 @@
  * size greater than one, or singleton elements whose only element is an array
  * or is falsy, are represented by an array containing their elements.
  */
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   /** Wraps a single element into a set. */
   exports.singleton = function(elt) {
     if(!elt || Array.isArray(elt))
@@ -114,4 +114,4 @@ define(function(require, exports) {
       return [];
     }
   };
-});
+//});

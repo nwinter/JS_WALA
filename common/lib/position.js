@@ -20,11 +20,11 @@
  * For compatibility with Esprima, line numbering should normally be 1-based.
  */
 
-if(typeof define !== 'function') {
-  var define = require('amdefine')(module);
-}
-
-define(function(require, exports) {
+//if(typeof define !== 'function') {
+//  var define = require('amdefine')(module);
+//}
+//
+//define(function(require, exports) {
   function Position(url, start_line, start_offset, end_line, end_offset) {
     this.url = url || "<unknown>";
     this.start_line = start_line;
@@ -59,4 +59,4 @@ define(function(require, exports) {
     Position: Position,
     DUMMY_POS: DUMMY_POS
   };
-});
+//});
