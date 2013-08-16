@@ -17,7 +17,7 @@
 //}
 //
 //define(function(require, exports) {
-  Array.prototype.flatmap = function(fn, thisArg) {
+  var flatmap = function(fn, thisArg) {  
     var res = [];
     for(var i=0;i<this.length;++i) {
       var r = fn.call(thisArg, this[i], i, this);
@@ -26,4 +26,11 @@
     }
     return res;
   };
+  if(typeof Object.defineProperty !== 'undefined')
+    Object.defineProperty(Array.prototype, 'flatmap', {
+      value: flatmap,
+      enumerable: false
+    });
+  else
+    Array.prototype.flatmap = flatmap;
 //});
