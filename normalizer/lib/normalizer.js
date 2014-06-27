@@ -335,6 +335,7 @@
           var body = nd.properties.flatmap(function(prop, i) {
             switch(prop.kind) {
             case 'init':
+            case undefined:  // Nick's addition, since CoffeeScript Redux doesn't seem to add 'init' to these things like it should.
               props[props.length] = new ast.Property(prop.key, new ast.Identifier(prop_tmps[i]), 'init');
               inheritPosition(props[props.length-1], prop);
               // recursively normalize property value expression
