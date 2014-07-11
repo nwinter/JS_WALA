@@ -275,7 +275,7 @@
                                     [new ast.ExpressionStatement(new ast.AssignmentExpression('=', new ast.Identifier(getTarget()), new ast.MemberExpression(new ast.Identifier('__global'), new ast.Identifier(tmp), true)))],
                                     [new ast.ExpressionStatement(new ast.AssignmentExpression('=', new ast.Identifier(tmp3), new ast.Literal('ReferenceError'))),
                                      new ast.ExpressionStatement(new ast.AssignmentExpression('=', new ast.Identifier(tmp4), new ast.MemberExpression(new ast.Identifier('__global'), new ast.Identifier(tmp3), true))),
-                                     new ast.ExpressionStatement(new ast.AssignmentExpression('=', new ast.Identifier(tmp5), new ast.NewExpression(new ast.Identifier(tmp4), []))),
+                                     new ast.ExpressionStatement(new ast.AssignmentExpression('=', new ast.Identifier(tmp5), new ast.NewExpression(new ast.Identifier(tmp4), [new ast.BinaryExpression('+', new ast.Literal('ReferenceError: '), new ast.BinaryExpression('+', new ast.Identifier(tmp), new ast.Literal(' is not defined')))]))),
                                      new ast.ThrowStatement(new ast.Identifier(tmp5))]));
             }
           } else {
